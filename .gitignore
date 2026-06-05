@@ -1,38 +1,41 @@
-# Root .gitignore for Richard Feynman Digital Twin
-
-# ----- Frontend (Next.js) -----
-# Node.js dependencies
+# Node.js & Next.js
 node_modules/
-# Next.js build output
 .next/
-# Static export output (if used)
 out/
-# Optional: Vite or other build folders
-.dist/
 
-# ----- Backend (FastAPI / Python) -----
-# Python virtual environments
+# Python
 venv/
+__pycache__/
+.pytest_cache/
+
+# Vector DB storage
+chroma_db/
+chromadb/
+
+# Database files
+*.sqlite
+*.db
+
+# Environment variables
 .env
 .env.local
 .env.*
-# Byte‑code caches
-__pycache__/
-*.py[cod]
-.pytest_cache/
 
-# ----- Data & Vector Stores -----
-# ChromaDB vector database
-chroma_db/
-# SQLite / other database files
-*.sqlite
-*.db
-# Explicit folder for DB files used by backend
-database/*.db
-
-# ----- Logs & Runtime -----
-*.log
-
-# ----- OS / IDE generated files -----
+# OS generated files
 .DS_Store
 Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Build artifacts
+dist/
+build/
+
+# IDE / editor configs
+.vscode/
+.idea/
+
+# Misc
+*.tgz

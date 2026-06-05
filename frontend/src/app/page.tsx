@@ -112,9 +112,7 @@ export default function ChatDashboard() {
   }, []);
 
   // ── Mode state ────────────────────────────────────────────────────────────
-  if (!mounted) {
-    return <div className="flex h-screen bg-gray-900"></div>;
-  }
+
   const [chatMode, setChatMode] = useState<ChatMode>("tutor");
 
   // ── Voice state ───────────────────────────────────────────────────────────
@@ -321,6 +319,9 @@ export default function ChatDashboard() {
   const isStudentMode = chatMode === "student";
 
   // ─────────────────────────────────────────────────────────────────────────
+  if (!mounted) {
+    return <div className="flex h-screen bg-gray-900"></div>;
+  }
   return (
     <div className="flex h-screen w-full bg-background overflow-hidden font-sans">
 
