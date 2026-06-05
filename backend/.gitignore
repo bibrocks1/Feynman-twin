@@ -1,0 +1,21 @@
+# Local Python environment
+venv/
+.venv/
+
+# Secrets (keep .env.example committed as a template)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Generated vector store & databases
+chroma_db/
+*.db
+database/*.db
+
+# Bytecode
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
