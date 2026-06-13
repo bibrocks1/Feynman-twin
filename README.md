@@ -281,12 +281,6 @@ Early testing revealed the LLM defaulted to verbose, preamble-heavy responses th
 
 ---
 
-## Design Documentation
-
-See [`docs/design_decisions.md`](docs/design_decisions.md) for full rationale on chunking strategy, async memory extraction architecture, Pydantic contract design, and stack trade-off analysis.
-
----
-
 ## License & Attribution
 
 Built as an academic project for **AIMS DTU 2026**. Feynman lecture excerpts and curated reference material in `data/` are used strictly for educational retrieval purposes. Respect original copyrights when extending the corpus. The application architecture and all custom code are the original work of the student author.
